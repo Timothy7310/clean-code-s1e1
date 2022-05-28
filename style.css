@@ -37,8 +37,6 @@ body {
 .task__name,
 .add-item__input,
 .task__input {
-  width: 56%;
-  display: inline-block;
   flex-grow: 1;
 }
 
@@ -51,8 +49,7 @@ ul {
   padding: 0px;
 }
 
-li,
-h3 {
+li{
   list-style: none;
 }
 
@@ -113,10 +110,6 @@ button {
   margin: 0 0 20px;
 }
 
-.add-item__input {
-  width: 318px;
-}
-
 /* Task list */
 .task {
   overflow: hidden;
@@ -127,10 +120,6 @@ button {
   align-items: center;
 }
 
-li > * {
-  vertical-align: middle;
-}
-
 .task__checkbox {
   margin: 0 10px;
 }
@@ -139,7 +128,6 @@ li > * {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
-  width: 226px;
 }
 
 .button-delete__img {
@@ -161,12 +149,10 @@ li > * {
 /* Edit Task */
 .task__input {
   display: none;
-  width: 226px;
 }
 
 .editMode .task__input {
   display: inline-block;
-  width: 224px;
 }
 
 .editMode .task__name {
